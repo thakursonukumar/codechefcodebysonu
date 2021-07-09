@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void) {
+    int X;
+    float Y,leftam;
+	scanf("%d %f",&X,&Y);
+	if(X%5==0 && X<=(Y-0.50))
+	{
+    	leftam=Y-X-(0.50);
+    	printf("%.2f",leftam);
+	}
+	else if(X%5!=0 && X<=(Y-0.50))
+	{
+	    printf("%.2f",Y);
+	}
+	else
+	{
+	printf("%.2f",Y);    
+	}
+	return 0;
+}
